@@ -1,0 +1,158 @@
+body {
+  background: #ffffff; 
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Top and bottom titles */
+.form-title {
+  background: #fff;
+  padding: 10px 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(34, 1, 141, 0.1);
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #5107f1;
+}
+.form-title.bottom {
+  margin-top: 20px;
+  color: #009688;
+}
+
+/* Outer form box with gradient */
+.form-box {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #f789be, #db7ab4);
+  padding: 2px;
+  max-width: 700px;
+  width: 100%;
+}
+
+/* Header */
+.form-header {
+  background: linear-gradient(to right, #8e74dc, #d50898);
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 14px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Inner white box
+.form-inner {
+  background: #fff;
+  border-radius: 12px;
+  padding: 22px;
+} */
+
+.form-inner {
+  background: linear-gradient(to right, #e8e5f1, #f2e5e8);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Input groups */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.input-group {
+  flex: 1;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+.input-group.full-width {
+  flex: 100%;
+}
+label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+}
+input, select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Options */
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 5px;
+}
+.options label {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+table, th, td {
+  border: 1px solid #ddd;
+}
+th, td {
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background: #f9f9f9;
+  font-size: 14px;
+}
+
+
+
+/* Buttons */
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+button {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+button.reset {
+  background: #eee;
+  color: oklab(21.017% 0.0015 0.00044);
+}
+button.submit {
+  background: linear-gradient(to right, #8e74dc, #d50898);
+  color: hsl(0, 0%, 100%);
+}
+
+
+/* Fix inputs inside table */
+table input {
+  width: 95%;             
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 13px;
+  box-sizing: border-box; 
+}
+
